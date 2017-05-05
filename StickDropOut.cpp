@@ -6,12 +6,13 @@
 
 #include <random>
 
-
+char m_robot = 'R';
+int m_locateRobot;
+int m_MapWidth , m_MapHeight;
+char m_wall = 'W';
+std::vector< std::vector<char> > mapArray;
 
 StickDropOut::StickDropOut(int gridWidth, int gridHeight) {
-    //init
-    m_robot = 'R';
-    m_wall = 'W';
 
     //GridMapを作成する為に必要な配列の数を求める．
     m_MapWidth = gridWidth * 2 + 1;

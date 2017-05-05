@@ -16,11 +16,6 @@ public:
 
 
 private:
-    char m_robot;
-    int m_robotX,m_robotY;
-    int m_MapWidth , m_MapHeight;
-    char m_wall;
-    std::vector< std::vector<char> > mapArray;
     void createMap();
     void makeStickMap();
     int generateRandom();
