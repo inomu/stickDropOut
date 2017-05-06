@@ -10,16 +10,21 @@
 
 class StickDropOut {
 public:
-    StickDropOut(int gridWidth,int gridHeight);
+    StickDropOut(int , int);
     void dispMap();
     void summonRobot();
-
+    int moveRobot(int);
 
 private:
+    //generate map
     void createMap();
     void makeStickMap();
     int generateRandom();
     bool pushStick(int , int);
+
+    //move robot
+    void setRobotLocate(int , int);
+    void deleteRobot();
 };
 
 
